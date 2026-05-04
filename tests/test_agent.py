@@ -45,7 +45,7 @@ def run_test(question: str):
 
 if __name__ == "__main__":
 
-    run_test("How many studio albums were published by Mercedes Sosa between 2000 and 2009 (included)? You can use the latest 2022 version of english wikipedia.")
+    # run_test("How many studio albums were published by Mercedes Sosa between 2000 and 2009 (included)? You can use the latest 2022 version of english wikipedia.")
 
     # run_test("In the video https://www.youtube.com/watch?v=L1vXCYZAYYM, what is the highest number of bird species to be on camera simultaneously?")
 
@@ -85,12 +85,4 @@ if __name__ == "__main__":
 
     # run_test("The attached Excel file contains the sales of menu items for a local fast-food chain. What were the total sales that the chain made from food (not including drinks)? Express your answer in USD with two decimal places.")
 
-    # run_test("What is the first name of the only Malko Competition recipient from the 20th Century (after 1977) whose nationality on record is a country that no longer exists?")
-
-    # run_test("Review the chess position provided in the image. It is black's turn. Provide the correct next move for black which guarantees a win. Please provide your response in algebraic notation. url: https://agents-course-unit4-scoring.hf.space/files/cca530fc-4052-43b2-b130-b30968d8aa44")
-
-    # run_test("Examine the video at https://www.youtube.com/watch?v=1htKBjuUWec.\n\nWhat does Teal'c say in response to the question \"Isn't that hot?\"")
-
-    # run_test("What is 123 * 456?")
-    # run_test("Who is Albert Einstein?")
-    # run_test("What is the capital of France?")
+    run_test("What is the first name of the only Malko Competition recipient from the 20th Century (after 1977) whose nationality on record is a country that no longer exists?")

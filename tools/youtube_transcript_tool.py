@@ -17,7 +17,7 @@ def extract_video_id(url: str) -> str:
 @tool
 def youtube_transcript_qa(url: str, question: str) -> dict:
     """
-    Extract relevant context window from YouTube transcript for QA.
+    Use this tool when the question requires understanding of an audio content of a youtube video.
     """
 
     try:

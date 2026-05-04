@@ -1,8 +1,11 @@
 import os
 import gradio as gr
 import requests
-import inspect
 import pandas as pd
+from graph import graph
+from dotenv import load_dotenv
+load_dotenv()
+
 
 # (Keep Constants as is)
 # --- Constants ---
@@ -15,10 +18,17 @@ class BasicAgent:
         print("BasicAgent initialized.")
     def __call__(self, question: str) -> str:
         print(f"Agent received question (first 50 chars): {question[:50]}...")
-        fixed_answer = "This is a default answer."
-        print(f"Agent returning fixed answer: {fixed_answer}")
-        return fixed_answer
 
+        result = graph.invoke({
+            "messages": [{"role": "user", "content": question}]
+        })
+
+        for msg in reversed(result["messages"]):
+            if hasattr(msg, "content") and isinstance(msg.content, str):
+                return msg.content.strip()
+
+        return ""
+            
 def run_and_submit_all( profile: gr.OAuthProfile | None):
     """
     Fetches all questions, runs the BasicAgent on them, submits all answers,

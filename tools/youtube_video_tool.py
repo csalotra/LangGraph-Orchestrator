@@ -105,10 +105,7 @@ def extract_key_frames(youtube_url: str, max_frames: int = 20) -> List[str]:
 @tool
 def youtube_frame_extractor(url: str) -> dict:
     """
-    Extract key frames from a YouTube video.
-
-    Use this tool when:
-    - the question requires visual understanding of a video
+    Use this tool when the question requires visual understanding of a video
 
     Returns:
     - dict with base64 encoded frames

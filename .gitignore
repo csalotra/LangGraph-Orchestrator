@@ -1,0 +1,124 @@
+# -------------------------
+
+# Python
+
+# -------------------------
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+ENV/
+
+# -------------------------
+
+# Environment & Secrets
+
+# -------------------------
+
+.env
+.env.*
+*.env
+*.key
+*.pem
+
+# -------------------------
+
+# Logs & runtime files
+
+# -------------------------
+
+*.log
+logs/
+*.out
+*.err
+
+# -------------------------
+
+# OS files
+
+# -------------------------
+
+.DS_Store
+Thumbs.db
+
+# -------------------------
+
+# IDE / Editor
+
+# -------------------------
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -------------------------
+
+# Build / packaging
+
+# -------------------------
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# -------------------------
+
+# Testing / coverage
+
+# -------------------------
+
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# -------------------------
+
+# Data / media
+
+# -------------------------
+
+# Avoid committing extracted frames or temp video data
+
+data/
+frames/
+tmp/
+*.mp4
+*.avi
+*.mov
+
+# -------------------------
+
+# OpenCV / temp files
+
+# -------------------------
+
+*.jpg
+*.jpeg
+*.png
+
+# -------------------------
+
+# LangChain / cache
+
+# -------------------------
+
+.cache/
+langchain.db
+
+# -------------------------
+
+# Misc
+
+# -------------------------
+
+*.bak
+*.tmp

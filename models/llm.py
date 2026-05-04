@@ -6,14 +6,10 @@ load_dotenv()
 
 def get_llm():
     """
-    Returns a configured LLM instance using OpenRouter + DeepSeek.
-
-    Requirements:
-    - Set environment variable: OPENROUTER_API_KEY
-    - Install: pip install langchain-openai
+    Returns a configured LLM instance
     """
 
-    api_key = os.getenv("API_KEY")
+    api_key = os.getenv("OPENROUTER_API_KEY")
 
     if not api_key:
         raise ValueError(
