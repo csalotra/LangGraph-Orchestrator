@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 from graph import graph
 from dotenv import load_dotenv
+import re
 load_dotenv()
 
 
@@ -25,7 +26,11 @@ class BasicAgent:
 
         for msg in reversed(result["messages"]):
             if hasattr(msg, "content") and isinstance(msg.content, str):
-                return msg.content.strip()
+                text = msg.content.strip()
+
+                match = re.search(r"final answer\s*:\s*(.*)", text, re.IGNORECASE)
+                if match:
+                    return match.group(1).strip()
 
         return ""
             
